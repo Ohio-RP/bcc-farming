@@ -15,7 +15,17 @@ shared_scripts {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
+<<<<<<< Updated upstream
     'server/services/*.lua'
+=======
+    'server/services/*.lua',
+    -- NOVOS EXPORTS - FASE 1
+    'server/exports/basic.lua',
+    'server/exports/player.lua',
+    'server/exports/production.lua',
+    'server/exports/geographic.lua',
+    'server/exports/notifications.lua'
+>>>>>>> Stashed changes
 }
 
 client_scripts {
@@ -29,4 +39,49 @@ dependencies {
     'bcc-utils'
 }
 
+<<<<<<< Updated upstream
 version '2.4.2'
+=======
+-- Exports disponíveis - FASE 1
+exports {
+    -- BÁSICOS (6 exports)
+    'GetGlobalPlantCount',
+    'GetGlobalPlantsByType', 
+    'GetNearHarvestPlants',
+    'GetFarmingOverview',
+    'GetWateringStatus',
+    
+    -- JOGADORES (5 exports)
+    'GetPlayerPlantCount',
+    'GetPlayerPlants',
+    'CanPlayerPlantMore',
+    'GetPlayerFarmingStats',
+    'GetPlayerComparison',
+    
+    -- PRODUÇÃO (5 exports)
+    'GetEstimatedProduction',
+    'GetTotalProductionPotential',
+    'GetHourlyProductionForecast',
+    'GetProductionEfficiency',
+    'GetGrowthAnalysis',
+    
+    -- GEOGRÁFICOS (6 exports)
+    'GetPlantsInRadius',
+    'GetPlantDensity',
+    'GetDominantPlantInArea',
+    'IsValidPlantLocation',
+    'FindBestPlantingAreas',
+    'GetPlantConcentrationMap',
+    
+    -- NOTIFICAÇÕES (7 exports)
+    'NotifyReadyPlants',
+    'NotifyPlantsNeedWater', 
+    'NotifyPlantLimits',
+    'NotifyFarmingEvent',
+    'SendDailyFarmingReport',
+    'NotifyPlantSmelled',
+    'PlantConcentrationMap'
+}
+
+version '2.4.2-exports'
+>>>>>>> Stashed changes
