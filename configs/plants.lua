@@ -820,6 +820,10 @@ Plants = {
         plantOffset = 1,                   -- If the plant is not on the ground properly you can use this setting
         jobLocked = false,                 -- If true, only players with the job will be able to harvest the plant
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        smelling = true,                  -- PoliceJob can smell this plant
+>>>>>>> Stashed changes
 =======
         smelling = true,                  -- PoliceJob can smell this plant
 >>>>>>> Stashed changes
