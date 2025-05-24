@@ -25,6 +25,9 @@ server_scripts {
     'server/exports/production.lua',
     'server/exports/geographic.lua',
     'server/exports/notifications.lua'
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
