@@ -823,6 +823,10 @@ Plants = {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        smelling = true,                  -- PoliceJob can smell this plant
+>>>>>>> Stashed changes
 =======
         smelling = true,                  -- PoliceJob can smell this plant
 >>>>>>> Stashed changes
