@@ -810,7 +810,7 @@ Plants = {
         plantingToolUsage = 2,             -- Durability value removed from the tool when planting a seed
         plantingDistance = 1.5,            -- Distance between plants
         plantName = 'Rams Head',           -- Name of the plant
-        seedName = 'Rams_Head_Seed',       -- Item name for the seed
+        seedName = '    ',       -- Item name for the seed
         seedAmount = 1,                    -- Amount of soil required to plant the seed
         plantProp = 's_inv_ramshead01bx',  -- Prop for the plant to be spawned
         soilRequired = false,              -- If true, the seed will require soil to be planted
@@ -819,6 +819,10 @@ Plants = {
         timeToGrow = 900,                  -- Time in seconds for the plant to grow
         plantOffset = 1,                   -- If the plant is not on the ground properly you can use this setting
         jobLocked = false,                 -- If true, only players with the job will be able to harvest the plant
+<<<<<<< Updated upstream
+=======
+        smelling = true,                  -- PoliceJob can smell this plant
+>>>>>>> Stashed changes
         blips = {
             enabled = true,                -- Set true to Enable Blips for Plants (Only shows to planter)
             sprite = 'blip_mp_spawnpoint', -- Default: 'blip_mp_spawnpoint'
