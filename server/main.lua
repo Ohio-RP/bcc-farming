@@ -217,6 +217,7 @@ RegisterNetEvent('bcc-farming:DetectSmellingPlants', function(playerCoords)
 
     for _, allPlant in pairs(AllPlants) do
         for h, plant in pairs(Plants) do
+            local plantData = AllPlants[allPlant.plant_type]
             if allPlant.plant_type == plant.seedName and plant.smelling then
                 local plantCoords = json.decode(allPlant.plant_coords)
                 local distance = #(vector3(plantCoords.x, plantCoords.y, plantCoords.z) - playerCoords)
@@ -230,3 +231,4 @@ RegisterNetEvent('bcc-farming:DetectSmellingPlants', function(playerCoords)
 end)
 
 BccUtils.Versioner.checkFile(GetCurrentResourceName(), 'https://github.com/BryceCanyonCounty/bcc-farming')
+
