@@ -4,7 +4,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 
 lua54 'yes'
 author 'Jake2k4'
-description 'bcc-farming'
+description 'bcc-farming with advanced exports system'
 
 shared_scripts {
     'configs/*.lua',
@@ -22,6 +22,7 @@ server_scripts {
     'server/exports/production.lua',
     'server/exports/geographic.lua',
     'server/exports/notifications.lua'
+    'server/exports/geographic.lua'
 }
 
 client_scripts {
