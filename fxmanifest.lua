@@ -20,6 +20,8 @@ server_scripts {
     'server/exports/basic.lua',
     'server/exports/player.lua',
     'server/exports/production.lua',
+    'server/exports/geographic.lua',
+    'server/exports/notifications.lua'
     'server/exports/geographic.lua'
 }
 
@@ -63,7 +65,17 @@ exports {
     'GetDominantPlantInArea',
     'IsValidPlantLocation',
     'FindBestPlantingAreas',
-    'GetPlantConcentrationMap'
+    'GetPlantConcentrationMap',
+    
+    -- NOTIFICAÇÕES (7 exports)
+    'NotifyReadyPlants',
+    'NotifyPlantsNeedWater', 
+    'NotifyPlantLimits',
+    'NotifyFarmingEvent',
+    'SendDailyFarmingReport',
+    'NotifyPlantSmelled',
+    'PlantConcentrationMap'
 }
 
 version '2.4.2-exports'
+
