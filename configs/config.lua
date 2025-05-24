@@ -1,13 +1,13 @@
 Config = {
-    defaultlang = 'en_lang', -- Language file to use
+    defaultlang = 'br_lang', -- Language file to use
     -----------------------------------------------------
 
     keys = {
-        fertYes = 0x4CC0E2FE, -- Default: 0x4CC0E2FE / B key
+        fertYes = 0x5415BE48, -- Default: 0x4CC0E2FE / B key
         fertNo = 0x9959A6F0,  -- Default: 0x9959A6F0 / C key
-        water = 0x4CC0E2FE,   -- Default: 0x4CC0E2FE / B key
-        harvest = 0x4CC0E2FE, -- Default: 0x4CC0E2FE / B key
-        destroy = 0x27D1C284, -- Default: 0x27D1C284 / R key
+        water = 0x5415BE48,   -- Default: 0x4CC0E2FE / B key
+        harvest = 0x5415BE48, -- Default: 0x4CC0E2FE / B key
+        destroy = 0x156F7119, -- Default: 0x27D1C284 / R key
     },
     -----------------------------------------------------
 

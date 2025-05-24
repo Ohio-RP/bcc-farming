@@ -3,6 +3,26 @@ BccUtils = exports['bcc-utils'].initiate()
 
 local AllPlants = {} -- AllPlants will contain all the plants in the server
 
+-- Função helper para verificar job de jogador
+local function CheckPlayerJob(src)
+    local user = VORPcore.getUser(src)
+    if not user then return false end
+    
+    local character = user.getUsedCharacter
+    if not character then return false end
+    
+    local playerJob = character.job
+    
+    -- Verificar se o job está na lista de jobs policiais
+    for _, job in pairs(Config.PoliceJobs) do
+        if playerJob == job then
+            return true
+        end
+    end
+    
+    return false
+end
+
 RegisterServerEvent('bcc-farming:AddPlant', function(plantData, plantCoords)
     local src = source
     local user = VORPcore.getUser(src)
@@ -26,7 +46,7 @@ RegisterServerEvent('bcc-farming:PlantToolUsage',function (plantData)
     local toolItem = plantData.plantingTool
     local toolUsage = plantData.plantingToolUsage
     local tool = exports.vorp_inventory:getItem(src, toolItem)
-    local toolMeta =  tool['metadata']
+    local toolMeta = tool and tool['metadata'] or {}
 
     if next(toolMeta) == nil then
         exports.vorp_inventory:subItem(src, toolItem, 1, {})
@@ -36,10 +56,8 @@ RegisterServerEvent('bcc-farming:PlantToolUsage',function (plantData)
         exports.vorp_inventory:subItem(src, toolItem, 1, toolMeta)
 
         if durabilityValue >= toolUsage then
-            exports.vorp_inventory:subItem(src, toolItem, 1, toolMeta)
             exports.vorp_inventory:addItem(src, toolItem, 1, { description = _U('UsageLeft') .. durabilityValue, durability = durabilityValue })
         elseif durabilityValue < toolUsage then
-            exports.vorp_inventory:subItem(src, toolItem, 1, toolMeta)
             VORPcore.NotifyRightTip(src, _U('needNewTool'), 4000)
         end
     end
@@ -213,3 +231,4 @@ RegisterNetEvent('bcc-farming:DetectSmellingPlants', function(playerCoords)
 end)
 
 BccUtils.Versioner.checkFile(GetCurrentResourceName(), 'https://github.com/BryceCanyonCounty/bcc-farming')
+
