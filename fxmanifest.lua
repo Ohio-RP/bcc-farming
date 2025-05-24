@@ -15,9 +15,6 @@ shared_scripts {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
-<<<<<<< Updated upstream
-    'server/services/*.lua'
-=======
     'server/services/*.lua',
     -- NOVOS EXPORTS - FASE 1
     'server/exports/basic.lua',
@@ -25,10 +22,6 @@ server_scripts {
     'server/exports/production.lua',
     'server/exports/geographic.lua',
     'server/exports/notifications.lua'
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 client_scripts {
@@ -42,9 +35,6 @@ dependencies {
     'bcc-utils'
 }
 
-<<<<<<< Updated upstream
-version '2.4.2'
-=======
 -- Exports disponíveis - FASE 1
 exports {
     -- BÁSICOS (6 exports)
@@ -87,4 +77,4 @@ exports {
 }
 
 version '2.4.2-exports'
->>>>>>> Stashed changes
+
