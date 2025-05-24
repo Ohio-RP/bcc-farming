@@ -16,12 +16,13 @@ server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
     'server/services/*.lua',
+    'server/database/*.lua',
     -- NOVOS EXPORTS - FASE 1
     'server/exports/basic.lua',
     'server/exports/player.lua',
     'server/exports/production.lua',
     'server/exports/geographic.lua',
-    'server/exports/notifications.lua'
+    'server/exports/notifications.lua',
     'server/exports/geographic.lua'
 }
 
