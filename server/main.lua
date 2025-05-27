@@ -3,23 +3,14 @@ BccUtils = exports['bcc-utils'].initiate()
 
 local AllPlants = {} -- AllPlants will contain all the plants in the server
 
--- Função helper para verificar job de jogador
 local function CheckPlayerJob(src)
-    local user = VORPcore.getUser(src)
-    if not user then return false end
-    
-    local character = user.getUsedCharacter
-    if not character then return false end
-    
+    local character = VORPcore.getUser(src).getUsedCharacter
     local playerJob = character.job
-    
-    -- Verificar se o job está na lista de jobs policiais
-    for _, job in pairs(Config.PoliceJobs) do
-        if playerJob == job then
+    for _, job in ipairs(Config.PoliceJobs) do
+        if (playerJob == job) then
             return true
         end
     end
-    
     return false
 end
 
