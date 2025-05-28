@@ -23,7 +23,8 @@ server_scripts {
     'server/exports/production.lua',
     'server/exports/geographic.lua',
     'server/exports/notifications.lua',
-    'server/exports/geographic.lua'
+    'server/exports/geographic.lua',
+    'test_suite.lua'
 }
 
 client_scripts {
