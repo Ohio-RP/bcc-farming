@@ -90,14 +90,14 @@ exports('GetPlantScarcityIndex', function(plantType)
     end
     
     local stats = data[1]
-    local activeSupply = stats.active_supply or 0
-    local recentDemand = stats.recent_demand or 0
-    local baseline = stats.baseline_avg or 10
-    
-    -- Fórmula de escassez aprimorada
-    local supplyRatio = baseline > 0 and (activeSupply / baseline) or 1
-    local demandRatio = baseline > 0 and (recentDemand / (baseline * 0.7)) or 1
-    
+    local activeSupply = tonumber(stats.active_supply) or 0
+    local recentDemand = tonumber(stats.recent_demand) or 0
+    local baseline = tonumber(stats.baseline_avg) or 10
+
+    -- CORRIGIR os cálculos:
+    local supplyRatio = baseline > 0 and (activeSupply / baseline) or 0
+    local demandRatio = baseline > 0 and (recentDemand / (baseline * 0.7)) or 0
+
     -- Calcular escassez: 0.0 = abundante, 1.0 = muito escasso
     local supplyRatio = tonumber(supplyRatio) or 0
     local demandRatio = tonumber(demandRatio) or 0
