@@ -150,7 +150,7 @@ function Cache:Invalidate(pattern)
     CreateThread(function()
         pcall(function()
             MySQL.execute('DELETE FROM bcc_farming_cache WHERE cache_key LIKE ?', 
-                { string.gsub(pattern, "%%", "%%%%") })
+                { pattern:gsub("%%", "%%%%") })
         end)
     end)
     

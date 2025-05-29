@@ -17,7 +17,6 @@ server_scripts {
     'server/main.lua',
     'server/services/*.lua',
     'server/database/*.lua',
-    -- NOVOS EXPORTS - FASE 1
     'server/exports/basic.lua',
     'server/exports/player.lua',
     'server/exports/production.lua',
@@ -41,7 +40,6 @@ dependencies {
     'bcc-utils'
 }
 
--- Exports disponíveis - FASE 1
 exports {
     -- BÁSICOS (6 exports)
     'GetGlobalPlantCount',

@@ -99,6 +99,8 @@ exports('GetPlantScarcityIndex', function(plantType)
     local demandRatio = baseline > 0 and (recentDemand / (baseline * 0.7)) or 1
     
     -- Calcular escassez: 0.0 = abundante, 1.0 = muito escasso
+    local supplyRatio = tonumber(supplyRatio) or 0
+    local demandRatio = tonumber(demandRatio) or 0
     local scarcityIndex = math.max(0, math.min(1, 
         0.5 - (supplyRatio * 0.35) + (demandRatio * 0.35)
     ))
