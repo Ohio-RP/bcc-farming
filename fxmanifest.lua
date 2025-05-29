@@ -24,6 +24,9 @@ server_scripts {
     'server/exports/geographic.lua',
     'server/exports/notifications.lua',
     'server/exports/geographic.lua',
+    'server/exports/cache.lua',        -- ✅ NOVO
+    'server/exports/economy.lua',      -- ✅ NOVO
+    'server/exports/integration.lua',  -- ✅ NOVO
     'test_suite.lua'
 }
 
