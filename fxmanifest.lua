@@ -24,9 +24,9 @@ server_scripts {
     'server/exports/geographic.lua',
     'server/exports/notifications.lua',
     'server/exports/geographic.lua',
-    'server/exports/cache.lua',        -- ✅ NOVO
-    'server/exports/economy.lua',      -- ✅ NOVO
-    'server/exports/integration.lua',  -- ✅ NOVO
+    'server/exports/cache.lua',        
+    'server/exports/economy.lua',     
+    'server/exports/integration.lua', 
     'test_suite.lua'
 }
 
@@ -79,7 +79,18 @@ exports {
     'NotifyFarmingEvent',
     'SendDailyFarmingReport',
     'NotifyPlantSmelled',
-    'PlantConcentrationMap'
+    'PlantConcentrationMap',
+
+    -- CACHE (3 exports)
+    'GetCacheStats',
+    'GetGlobalPlantCountCached',
+    'ClearCache',
+    
+    -- ECONOMIA (4 exports)  
+    'GetPlantScarcityIndex',
+    'CalculateDynamicPrice',
+    'GetPlantingTrend',
+    'GetMarketReport'
 }
 
 version '2.4.2-exports'

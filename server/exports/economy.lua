@@ -61,7 +61,7 @@ end
 -- Calcular índice de escassez
 exports('GetPlantScarcityIndex', function(plantType)
     local cacheKey = "economy:scarcity:" .. plantType
-    local cached = Cache and Cache:Get(cacheKey)
+    local cached = nil
     if cached then return cached end
     
     local success, data = pcall(function()
@@ -235,7 +235,7 @@ exports('GetPlantingTrend', function(plantType, days)
     days = days or 7
     
     local cacheKey = "economy:trend:" .. plantType .. ":" .. days
-    local cached = Cache and Cache:Get(cacheKey)
+    local cached = nil
     if cached then return cached end
     
     local success, dailyStats = pcall(function()
@@ -359,7 +359,7 @@ end)
 -- Obter relatório de mercado completo
 exports('GetMarketReport', function()
     local cacheKey = "economy:market_report"
-    local cached = Cache and Cache:Get(cacheKey)
+    local cached = nil
     if cached then return cached end
     
     -- Buscar todas as plantas ativas
