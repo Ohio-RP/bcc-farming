@@ -27,6 +27,7 @@ local function SetupPhase2Database()
         ADD COLUMN IF NOT EXISTS `coord_y` FLOAT GENERATED ALWAYS AS (JSON_EXTRACT(plant_coords, '$.y')) STORED,
         ADD COLUMN IF NOT EXISTS `coord_z` FLOAT GENERATED ALWAYS AS (JSON_EXTRACT(plant_coords, '$.z')) STORED,
         ADD COLUMN IF NOT EXISTS `time_left_int` INT GENERATED ALWAYS AS (CAST(time_left AS UNSIGNED)) STORED,
+        ADD COLUMN IF NOT EXISTS `last_watered_time` TIMESTAMP NULL,
         ADD COLUMN IF NOT EXISTS `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         ADD COLUMN IF NOT EXISTS `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     ]], "Adicionando colunas otimizadas")

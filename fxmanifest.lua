@@ -9,87 +9,66 @@ description 'bcc-farming with advanced exports system'
 shared_scripts {
     'configs/*.lua',
     'locale.lua',
-    'languages/*.lua'
+    'languages/*.lua',
+    'utils/bln_notify.lua'
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
-    'server/services/*.lua',
-    'server/database/*.lua',
-    'server/exports/basic.lua',
-    'server/exports/player.lua',
-    'server/exports/production.lua',
-    'server/exports/geographic.lua',
-    'server/exports/notifications.lua',
-    'server/exports/geographic.lua',
-    'server/exports/cache.lua',        
-    'server/exports/economy.lua',     
-    'server/exports/integration.lua', 
-    'test_suite.lua'
+    'server/database/setup.lua',
+    'server/services/usableItems_v2.lua',
+    'server/exports/basic_simple.lua',
+    'server/exports/player_simple.lua',
+    'server/nui_callbacks.lua',
+    'testing/simplified_tests.lua',
+    'testing/simple_tests.lua',
+    'testing/bln_notify_test.lua',
+    'testing/debug_stages.lua'
 }
 
 client_scripts {
     'client/main.lua',
-    'client/services/*.lua'
+    'client/services/prop_management.lua',
+    'client/services/planting.lua',
+    'client/services/planted.lua',
+    'client/nui_integration.lua',
+    'testing/bln_notify_test.lua',
+    'testing/debug_stages.lua'
+}
+
+ui_page 'ui/index.html'
+
+files {
+    'ui/index.html',
+    'ui/plant-status.css',
+    'ui/plant-status.js',
+    'ui/paper.png',
+    'ui/fonts/*.ttf',
+    'ui/fonts/*.otf',
 }
 
 dependencies {
     'vorp_character',
     'vorp_inventory',
-    'bcc-utils'
+    'bcc-utils',
+    'npp_farmstats'
 }
 
 exports {
-    -- BÁSICOS (6 exports)
+    -- ✅ WORKING BASIC EXPORTS (5)
     'GetGlobalPlantCount',
     'GetGlobalPlantsByType', 
-    'GetNearHarvestPlants',
     'GetFarmingOverview',
     'GetWateringStatus',
+    'GetGrowthStageDistribution',
     
-    -- JOGADORES (5 exports)
+    -- ✅ WORKING PLAYER EXPORTS (4)
     'GetPlayerPlantCount',
     'GetPlayerPlants',
     'CanPlayerPlantMore',
-    'GetPlayerFarmingStats',
-    'GetPlayerComparison',
-    
-    -- PRODUÇÃO (5 exports)
-    'GetEstimatedProduction',
-    'GetTotalProductionPotential',
-    'GetHourlyProductionForecast',
-    'GetProductionEfficiency',
-    'GetGrowthAnalysis',
-    
-    -- GEOGRÁFICOS (6 exports)
-    'GetPlantsInRadius',
-    'GetPlantDensity',
-    'GetDominantPlantInArea',
-    'IsValidPlantLocation',
-    'FindBestPlantingAreas',
-    'GetPlantConcentrationMap',
-    
-    -- NOTIFICAÇÕES (7 exports)
-    'NotifyReadyPlants',
-    'NotifyPlantsNeedWater', 
-    'NotifyPlantLimits',
-    'NotifyFarmingEvent',
-    'SendDailyFarmingReport',
-    'NotifyPlantSmelled',
-    'PlantConcentrationMap',
-
-    -- CACHE (3 exports)
-    'GetCacheStats',
-    'GetGlobalPlantCountCached',
-    'ClearCache',
-    
-    -- ECONOMIA (4 exports)  
-    'GetPlantScarcityIndex',
-    'CalculateDynamicPrice',
-    'GetPlantingTrend',
-    'GetMarketReport'
+    'GetPlayerFarmingStats'
 }
 
-version '2.4.2-exports'
+version '2.5.0-enhanced'
 

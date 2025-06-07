@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Plantas - BCC Farming</title>
+    <style>
+        @font-face {
+            font-family: 'manuscrit';
+            src: url('fonts/manuscrit.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Scratches';
+            src: url('fonts/Scratches.otf') format('opentype');
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            background: transparent !important;
+            background-color: transparent !important;
+            margin: 0;
+            padding: 0;
+            font-family: 'Scratches', sans-serif;
+        }
+        
+        #app {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        
+        .plant-status-widget {
+            position: fixed;
+            top: 20%;
+            right: 2%;
+            z-index: 9999;
+            background: transparent !important;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .notebook {
+            background-image: url('paper.png');
+            background-size: cover;
+            background-position: center;
+            width: 380px;
+            padding: 16px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            margin: 0;
+            font-family: 'manuscrit', sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #2c1810;
+        }
+        
+        h2 {
+            font-size: 2.4em;
+            text-align: center;
+            margin: 5px 0 0 0;
+            font-family: 'Scratches', sans-serif;
+            font-weight: bold;
+            color: #2c1810;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 0;
+            padding: 2px 0;
+        }
+        
+        .task-text {
+            font-family: 'Scratches', sans-serif;
+            font-weight: normal;
+            font-size: 1.8em;
+            flex: 1;
+            color: #2c1810;
+        }
+        
+        .checkboxes {
+            display: flex;
+            flex-shrink: 0;
+        }
+        
+        .checkbox {
+            width: 16px;
+            height: 16px;
+            border: 2px dashed #2c1810;
+            margin: 0 2px;
+            display: inline-block;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox.checked::after {
+            content: '✔';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            color: #2c1810;
+            font-weight: bold;
+        }
+        
+        .notes-section {
+            margin-top: 12px;
+        }
+        
+        .notes-section h3 {
+            font-family: 'Scratches', sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 6px;
+            color: #2c1810;
+        }
+        
+        .notes-space {
+            width: 100%;
+            min-height: 45px;
+            border: 1px dashed #2c1810;
+            padding: 6px;
+            font-family: 'Scratches', sans-serif;
+            font-size: 1.2em;
+            color: #2c1810;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .plant-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 12px;
+        }
+        
+        .plant-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            border: 2px solid #2c1810;
+            object-fit: cover;
+        }
+        
+        .plant-info {
+            flex: 1;
+        }
+        
+        .harvest-amount {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+        }
+        
+        .amount-text {
+            font-family: 'Scratches', sans-serif;
+            font-weight: bold;
+            font-size: 1.6em;
+            color: #2c1810;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        /* Animation effects */
+        .plant-status-widget.fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .plant-status-widget.fade-out {
+            animation: fadeOut 0.3s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateX(100%); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateX(0); 
+            }
+        }
+        
+        @keyframes fadeOut {
+            from { 
+                opacity: 1; 
+                transform: translateX(0); 
+            }
+            to { 
+                opacity: 0; 
+                transform: translateX(100%); 
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-height: 720px) {
+            .plant-status-widget {
+                top: 10%;
+                transform: scale(0.9);
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .plant-status-widget {
+                right: 1%;
+            }
+            
+            .notebook {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body id="app">
+    <!-- Plant Status Widget -->
+    <div id="plant-status-widget" class="plant-status-widget" style="display: none;">
+        
+        <!-- Notebook Style Panel -->
+        <div class="notebook">
+            <h1>PLANTAS</h1>
+            <div class="plant-header">
+                <img id="plant-image" src="" alt="Plant" class="plant-icon" style="display: none;">
+                <div class="plant-info">
+                    <h2 id="plant-name">Carregando...</h2>
+                </div>
+            </div>
+            
+            <ul>
+                <li>
+                    <span class="task-text">Crescimento</span>
+                    <div class="checkboxes" id="growth-checkboxes">
+                        <span class="checkbox" data-stage="1"></span>
+                        <span class="checkbox" data-stage="2"></span>
+                        <span class="checkbox" data-stage="3"></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="task-text">Tempo</span>
+                    <div class="checkboxes" id="time-checkboxes">
+                        <span class="checkbox" data-time="1"></span>
+                        <span class="checkbox" data-time="2"></span>
+                        <span class="checkbox" data-time="3"></span>
+                        <span class="checkbox" data-time="4"></span>
+                        <span class="checkbox" data-time="5"></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="task-text">Fertilizado</span>
+                    <div class="checkboxes" id="fertilizer-checkboxes">
+                        <span class="checkbox" data-fertilizer="1"></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="task-text">Água</span>
+                    <div class="checkboxes" id="water-checkboxes">
+                        <span class="checkbox" data-water="1"></span>
+                        <span class="checkbox" data-water="2"></span>
+                        <span class="checkbox" data-water="3"></span>
+                        <span class="checkbox" data-water="4"></span>
+                        <span class="checkbox" data-water="5"></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="task-text">Colheita</span>
+                    <div class="harvest-amount" id="harvest-amount">
+                        <span class="amount-text">0x</span>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="notes-section">
+                <h3>Notas:</h3>
+                <div class="notes-space" id="plant-notes">
+                    Aguardando informações da planta...
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script src="plant-status.js"></script>
+</body>
+
+</html>

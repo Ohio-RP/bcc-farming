@@ -1,0 +1,597 @@
+[    c-scripting-core] Creating script environments for bcc-farming
+[  script:bcc-farming] [BCC-Farming] Enhanced plant configuration loaded with 7 plants
+[  script:bcc-farming] [BCC-Farming] Multi-stage growth, multi-watering, and base fertilizer systems enabled
+[script:vorp_inventor] Warning: item 	wateringcan	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	wateringcan_dirtywater	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	plant_inspector	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	soil_prep_tool	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer_mixer	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[  script:bcc-farming] [BCC-Farming] Enhanced usable items loaded with multi-stage growth support!
+[  script:bcc-farming] [BCC-Farming] Features: Enhanced fertilizers, smart watering, soil preparation, crafting
+[  script:bcc-farming] [BCC-Farming] Simple basic exports loaded successfully!
+[  script:bcc-farming] [BCC-Farming] Simple player exports loaded successfully!
+[  script:bcc-farming] [BCC-Farming] Sistema de integração da FASE 2 carregado! ✅
+[  script:bcc-farming] [BCC-Farming] Comandos disponíveis:
+[  script:bcc-farming]   • /farming-admin [action] - Painel administrativo
+[  script:bcc-farming]   • /myfarming - Estatísticas pessoais
+[  script:bcc-farming]   • /farmnotify [type] - Testar notificações
+[  script:bcc-farming]   • farming-diagnostic - Diagnóstico completo (console)
+[  script:bcc-farming] [BCC-Farming] Exports adicionais:
+[  script:bcc-farming]   • TestIntegration() - Teste de integração
+[  script:bcc-farming]   • HealthCheck() - Verificação de saúde
+[  script:bcc-farming]   • GetMetrics() - Métricas do sistema
+[  script:bcc-farming]   • DebugInfo() - Informações de debug
+[  script:bcc-farming]   • RunBenchmark() - Teste de performance
+[           resources] Started resource bcc-farming
+[script:vorp_inventor] Warning: item 	seed_apple	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_banana	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_cherry	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_corn	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_tobacco	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_cannabis	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_flowers	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[    script:bcc-utils] ⚠️ Unsupported! [bcc-farming] (Version 2.5.0-enhanced)
+[    script:bcc-utils] Current Version (2.4.2) <https://github.com/Ohio-RP/bcc-farming>
+[script:vorp_inventor] Warning: item 	seed_apple	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_banana	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_cherry	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_corn	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_tobacco	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_cannabis	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	seed_flowers	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizersw	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizerpro	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizeregg	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizersq	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizerpulpsap	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizerbless	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizersn	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizersyn	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizerwoj	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer1	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer2	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[script:vorp_inventor] Warning: item 	fertilizer3	 is already registered,  cant register the same item twice 	
+[script:vorp_inventor] Info: if you restarting a script this is normal and you can ignore it!.
+[  script:bcc-farming] [BCC-Farming] Iniciando setup da FASE 2...
+[  script:bcc-farming] [BCC-Farming] Adicionando colunas otimizadas...
+[  script:bcc-farming] [BCC-Farming DB] Adicionando colunas otimizadas - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando índices...
+[  script:bcc-farming] [BCC-Farming DB] Índice de coordenadas - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Índice de tempo restante - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Índice de tipo de planta - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Índice de proprietário - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Índice de status de rega - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando tabela de histórico...
+[  script:bcc-farming] [BCC-Farming DB] Tabela de histórico - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando tabela de estatísticas de mercado...
+[  script:bcc-farming] [BCC-Farming DB] Tabela de estatísticas de mercado - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando tabela de cache...
+[  script:bcc-farming] [BCC-Farming DB] Tabela de cache - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando tabela de configurações...
+[  script:bcc-farming] [BCC-Farming DB] Tabela de configurações - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando tabela de alertas...
+[  script:bcc-farming] [BCC-Farming DB] Tabela de alertas - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Inserindo configurações padrão...
+[  script:bcc-farming] [BCC-Farming DB] Configurações padrão - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Inicializando estatísticas de mercado...
+[  script:bcc-farming] [BCC-Farming DB] Estatísticas iniciais de mercado - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Criando triggers de sincronização...
+[  script:bcc-farming] [BCC-Farming DB] Removendo trigger antigo - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Trigger de inserção - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Removendo trigger antigo - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming DB] Trigger de deleção - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Configurando limpeza automática...
+[  script:bcc-farming] [BCC-Farming DB] Evento de limpeza automática - ✅ Sucesso
+[  script:bcc-farming] [BCC-Farming] Setup da FASE 2 concluído com sucesso! ✅
+[  script:bcc-farming] [BCC-Farming] Funcionalidades adicionadas:
+[  script:bcc-farming]   • Sistema de cache otimizado
+[  script:bcc-farming]   • Histórico completo de ações
+[  script:bcc-farming]   • Economia dinâmica com preços
+[  script:bcc-farming]   • Sistema de alertas e notificações
+[  script:bcc-farming]   • Índices para alta performance
+[  script:bcc-farming]   • Triggers automáticos
+[  script:bcc-farming]   • Limpeza automática de dados
+║               MssRP║ farming-diagnostic
+[  script:bcc-farming] === BCC-Farming Complete Diagnostic ===
+[  script:bcc-farming] Overall Health: UNHEALTHY
+[  script:bcc-farming] Database: OK
+[  script:bcc-farming] Cache: OK
+[  script:bcc-farming] Economy: OK
+[  script:bcc-farming] Notifications: FAIL
+[  script:bcc-farming] 
+[  script:bcc-farming] === Current Metrics ===
+[  script:bcc-farming] Total Plants: 0
+[  script:bcc-farming] Plant Types: 0
+[  script:bcc-farming] Cache Hit Rate: 0.0%
+[  script:bcc-farming] Memory Usage: 1 MB
+[  script:bcc-farming] Active Markets: 0
+[  script:bcc-farming] 
+[  script:bcc-farming] === Integration Test ===
+[  script:bcc-farming] Status: PASS
+[  script:bcc-farming] Version: 2.5.0-phase2
+[  script:bcc-farming] Total Exports: 67
+[script:vorp_inventor] Warning: item 	plant_inspector	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	soil_prep_tool	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	fertilizer_mixer	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_tobacco	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_cannabis	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_flowers	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_tobacco	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_cannabis	 was added as usabled but  does not exist in database 	
+[script:vorp_inventor] Warning: item 	seed_flowers	 was added as usabled but  does not exist in database 	
+║               MssRP║ farming-test-full
+[  script:bcc-farming] [13:00:00][RUNNER] ==========================================
+[  script:bcc-farming] [13:00:00][RUNNER] 🚀 BCC-Farming v2.5.0 Full Test Suite
+[  script:bcc-farming] [13:00:00][RUNNER] ==========================================
+[  script:bcc-farming] [13:00:00][RUNNER][PREFLIGHT] Running pre-flight checks...
+[  script:bcc-farming] [13:00:00][RUNNER][PREFLIGHT] Database connectivity check passed
+[  script:bcc-farming] [13:00:00][RUNNER][PREFLIGHT] Required tables check passed
+[  script:bcc-farming] [13:00:00][RUNNER][PREFLIGHT] Configuration loaded check passed
+[  script:bcc-farming] [13:00:00][RUNNER][PREFLIGHT] Core modules check failed
+[  script:bcc-farming] [13:00:00][RUNNER] Pre-flight checks failed (1 issues)
+[  script:bcc-farming] [13:00:00][RUNNER][CONFIG] Starting Configuration Validation...
+[  script:bcc-farming] [13:00:00][RUNNER][CONFIG] Configuration Validation failed with error: @bcc-farming/testing/test_runner.lua:136: attempt to index a nil value (global 'ConfigValidator')
+[  script:bcc-farming] [13:00:01][RUNNER][MIGRATION] Starting Database Migration Validation...
+[  script:bcc-farming] [13:00:01][RUNNER][MIGRATION] Database Migration Validation failed with error: @bcc-farming/testing/test_runner.lua:140: attempt to index a nil value (global 'MigrationValidator')
+[  script:bcc-farming] [13:00:02][RUNNER][SYSTEM] Starting System Functionality Tests...
+[  script:bcc-farming] [13:00:02][RUNNER][SYSTEM] System Functionality Tests failed with error: @bcc-farming/testing/test_runner.lua:144: attempt to index a nil value (global 'TestSuite')
+[  script:bcc-farming] [13:00:03][RUNNER][PERFORMANCE] Starting Performance Tests...
+[  script:bcc-farming] [13:00:03][RUNNER][PERFORMANCE] Performance Tests failed with error: @bcc-farming/testing/test_runner.lua:148: attempt to index a nil value (global 'PerformanceTests')
+[  script:bcc-farming] [13:00:04][RUNNER] ==========================================
+[  script:bcc-farming] [13:00:04][RUNNER] 📊 Consolidated Test Results
+[  script:bcc-farming] [13:00:04][RUNNER] ==========================================
+[  script:bcc-farming] [13:00:04][RUNNER] Total test duration: 4048ms (4.0s)
+[  script:bcc-farming] [13:00:04][RUNNER] Test Category Results:
+[  script:bcc-farming] [13:00:04][RUNNER]   ❌ System Functionality Tests: FAIL (0ms)
+[  script:bcc-farming] [13:00:04][RUNNER]   ❌ Performance Tests: FAIL (0ms)
+[  script:bcc-farming] [13:00:04][RUNNER]   ❌ Database Migration Validation: FAIL (0ms)
+[  script:bcc-farming] [13:00:04][RUNNER]   ❌ Configuration Validation: FAIL (0ms)
+[  script:bcc-farming] [13:00:04][RUNNER] ==========================================
+[  script:bcc-farming] [13:00:04][RUNNER] 🔴 CRITICAL ISSUES DETECTED!
+[  script:bcc-farming] [13:00:04][RUNNER] System requires immediate attention before deployment
+[  script:bcc-farming] [13:00:04][RUNNER] 🚨 Critical Issues:
+[  script:bcc-farming] [13:00:04][RUNNER]   1. [CONFIG] Configuration Validation critical error
+[  script:bcc-farming] [13:00:04][RUNNER]   2. [MIGRATION] Database Migration Validation critical error
+[  script:bcc-farming] [13:00:04][RUNNER] 💡 Recommendations:
+[  script:bcc-farming] [13:00:04][RUNNER]   1. Fix critical issues in System Functionality Tests
+[  script:bcc-farming] [13:00:04][RUNNER]   2. Fix critical issues in Performance Tests
+[  script:bcc-farming] [13:00:04][RUNNER]   3. Fix critical issues in Database Migration Validation
+[  script:bcc-farming] [13:00:04][RUNNER]   4. Fix critical issues in Configuration Validation
+[  script:bcc-farming] [13:00:04][RUNNER] ==========================================
+[script:npp_cooperati] [NPP Cooperative Module Discovery] Iniciando descoberta de módulos NPP...
+[script:npp_cooperati] [NPP Cooperative Module Discovery] Descoberta NPP concluída: 0 módulos encontrados em 3ms
+║               MssRP║ farming-test-quick
+[  script:bcc-farming] [13:01:20][RUNNER] Running quick validation suite...
+[  script:bcc-farming] [13:01:20][RUNNER][CONFIG] Starting Configuration Validation...
+[  script:bcc-farming] [13:01:20][RUNNER][CONFIG] Configuration Validation failed with error: @bcc-farming/testing/test_runner.lua:136: attempt to index a nil value (global 'ConfigValidator')
+[  script:bcc-farming] [13:01:20][RUNNER][MIGRATION] Starting Migration Validation...
+[  script:bcc-farming] [13:01:20][RUNNER][MIGRATION] Migration Validation failed with error: @bcc-farming/testing/test_runner.lua:140: attempt to index a nil value (global 'MigrationValidator')
+[  script:bcc-farming] [13:01:20][RUNNER] 📋 Quick Validation Report
+[  script:bcc-farming] [13:01:20][RUNNER] ==========================================
+[  script:bcc-farming] [13:01:20][RUNNER] ❌ Quick validation failed - 4 critical issues
+║               MssRP║ farming-test-production
+[  script:bcc-farming] [13:01:31][RUNNER] Running production readiness check...
+[  script:bcc-farming] [13:01:31][RUNNER][CONFIG] Starting Configuration Validation...
+[  script:bcc-farming] [13:01:31][RUNNER][CONFIG] Configuration Validation failed with error: @bcc-farming/testing/test_runner.lua:136: attempt to index a nil value (global 'ConfigValidator')
+[  script:bcc-farming] [13:01:31][RUNNER][MIGRATION] Starting Migration Validation...
+[  script:bcc-farming] [13:01:31][RUNNER][MIGRATION] Migration Validation failed with error: @bcc-farming/testing/test_runner.lua:140: attempt to index a nil value (global 'MigrationValidator')
+[  script:bcc-farming] [13:01:31][RUNNER][SYSTEM] Starting System Tests...
+[  script:bcc-farming] [13:01:31][RUNNER][SYSTEM] System Tests failed with error: @bcc-farming/testing/test_runner.lua:144: attempt to index a nil value (global 'TestSuite')
+[  script:bcc-farming] [13:01:31][RUNNER] 🚀 Production Readiness Report
+[  script:bcc-farming] [13:01:31][RUNNER] ==========================================
+[  script:bcc-farming] [13:01:31][RUNNER] 🛑 NOT READY FOR PRODUCTION
+[  script:bcc-farming] [13:01:31][RUNNER] Critical issues must be resolved first
+║               MssRP║ farming-test-preflight
+[  script:bcc-farming] [13:01:39][RUNNER][PREFLIGHT] Running pre-flight checks...
+[  script:bcc-farming] [13:01:39][RUNNER][PREFLIGHT] Database connectivity check passed
+[  script:bcc-farming] [13:01:39][RUNNER][PREFLIGHT] Required tables check passed
+[  script:bcc-farming] [13:01:39][RUNNER][PREFLIGHT] Configuration loaded check passed
+[  script:bcc-farming] [13:01:39][RUNNER][PREFLIGHT] Core modules check failed
+[  script:bcc-farming] [13:01:39][RUNNER] Pre-flight checks completed: 3 passed, 1 failed
+║               MssRP║ farming-validate-config
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] ========================================
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] BCC-Farming v2.5.0 Configuration Validator
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] ========================================
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Validating basic configuration structure...
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Plants table found with 7 plant configurations
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Config table found
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Config.plantSetup exists
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Max plants configured: 10
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Validating individual plant configurations...
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid waterTimes (3)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid requiresBaseFertilizer (true)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has fertilizer item specified
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Maçã has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Maçã rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Maçã rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid waterTimes (2)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid requiresBaseFertilizer (false)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Banana has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Banana rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Banana rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid waterTimes (2)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid requiresBaseFertilizer (true)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has fertilizer item specified
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Cereja has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Cereja rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Cereja rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid waterTimes (3)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid requiresBaseFertilizer (false)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Milho has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Milho rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Milho rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid waterTimes (4)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid requiresBaseFertilizer (true)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has fertilizer item specified
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Tabaco has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Tabaco rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Tabaco rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid waterTimes (5)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid requiresBaseFertilizer (true)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has fertilizer item specified
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Erva Especial has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Erva Especial rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Erva Especial rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has required field 'seedName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has required field 'plantName'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has required field 'rewards'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has recommended field 'waterTimes'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has recommended field 'requiresBaseFertilizer'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has recommended field 'baseFertilizerItem'
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid stage1 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid stage2 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid stage3 prop
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has complete 3-stage prop system
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid waterTimes (3)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid requiresBaseFertilizer (false)
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] Flores has valid fertilizer item
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Flores rewards has no amount
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Flores rewards has no items
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Validating v2.5.0 compatibility...
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Compatibility analysis: 7 v2.5.0 compatible, 0 legacy only, 0 incompatible
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] All plants are v2.5.0 compatible!
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Generating optimization suggestions...
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] No optimization suggestions - configuration looks good!
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] ========================================
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Configuration Validation Results
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] ========================================
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Total Checks: 101
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Passed: 101
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Failed: 0
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Warnings: 14
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] Validation Time: 6ms
+[  script:bcc-farming] [13:01:55][CONFIG][PASS] 🎉 Configuration validation completed successfully!
+[  script:bcc-farming] [13:01:55][CONFIG][WARN] Configuration ready with 14 minor warnings
+[  script:bcc-farming] [13:01:55][CONFIG][INFO] ========================================
+║               MssRP║ farming-validate-migration
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] ========================================
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] BCC-Farming v2.5.0 Migration Validator
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] ========================================
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validating database schema migration...
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'growth_stage' exists with correct type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'growth_stage' has correct data type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'growth_progress' exists with correct type
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Column 'growth_progress' type mismatch: expected decimal(5,2), got float(5,2)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'water_count' exists with correct type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'water_count' has correct data type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'max_water_times' exists with correct type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'max_water_times' has correct data type
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Column 'base_fertilized' exists with correct type
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Column 'base_fertilized' type mismatch: expected tinyint(1), got tinyint(1)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy column 'plant_watered' preserved for compatibility
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Helper table 'bcc_farming_growth_stages' created successfully
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Helper table 'bcc_farming_watering_log' created successfully
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Helper table 'bcc_farming_fertilizer_log' created successfully
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Index 'idx_plant_owner' exists
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Index 'idx_growth_stage' exists
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Index 'idx_growth_progress' exists
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Index 'idx_water_status' not found - may affect performance
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validating migrated data integrity...
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] No existing plants found - cannot validate data migration
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] All 'growth_stage' values within valid range (1-3)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] All 'growth_progress' values within valid range (0-100)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] All 'water_count' values within valid range (0-50)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] All 'max_water_times' values within valid range (1-10)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] All 'base_fertilized' values within valid range (0-1)
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy plant_watered column accessible (0 watered plants)
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validating backup procedures...
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] No backup tables found - migration proceeded without backup
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validating stored procedures...
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Stored procedure 'UpdatePlantGrowthStage' not found
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Stored procedure 'CalculateWateringEfficiency' not found
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] Stored procedure 'GetPlantStatusForNUI' not found
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validating rollback capability...
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Rollback procedures documented in migration script
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy column 'plant_watered' preserved for rollback
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy column 'time_left' preserved for rollback
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy column 'plant_type' preserved for rollback
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Legacy column 'plant_owner' preserved for rollback
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] System appears ready for rollback if needed
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] ========================================
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Migration Validation Results
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] ========================================
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Total Checks: 27
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Passed: 27
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Failed: 0
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Warnings: 8
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] Validation Time: 41ms
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] 🎉 Migration validation completed successfully!
+[  script:bcc-farming] [13:02:07][MIGRATION][PASS] Your database is ready for BCC-Farming v2.5.0
+[  script:bcc-farming] [13:02:07][MIGRATION][WARN] ⚠️  8 warnings found - review recommended
+[  script:bcc-farming] [13:02:07][MIGRATION][INFO] ========================================
+║               MssRP║ farming-test-all
+[  script:bcc-farming] [13:02:18][INFO][SYSTEM] ========================================
+[  script:bcc-farming] [13:02:18][INFO][SYSTEM] BCC-Farming v2.5.0 Test Suite Starting
+[  script:bcc-farming] [13:02:18][INFO][SYSTEM] ========================================
+[  script:bcc-farming] [13:02:18][INFO][DATABASE] Starting database schema tests...
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Required column 'growth_stage' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Required column 'growth_progress' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Required column 'water_count' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Required column 'max_water_times' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Required column 'base_fertilized' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Helper table 'bcc_farming_growth_stages' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Helper table 'bcc_farming_watering_log' exists
+[  script:bcc-farming] [13:02:18][PASS][DATABASE] Helper table 'bcc_farming_fertilizer_log' exists
+[  script:bcc-farming] [13:02:18][INFO][CONFIG] Starting plant configuration tests...
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Plants configuration table exists
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Plants is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Plants table is not empty
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Maçã requiresBaseFertilizer is boolean
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Banana waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Cereja requiresBaseFertilizer is boolean
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Milho waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Tabaco requiresBaseFertilizer is boolean
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Erva Especial requiresBaseFertilizer is boolean
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores has seedName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores has plantName
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores plantProps is a table
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores stage1 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores stage2 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores stage3 is a string
+[  script:bcc-farming] [13:02:18][PASS][CONFIG] Flores waterTimes is within valid range
+[  script:bcc-farming] [13:02:18][INFO][CALCULATIONS] Starting growth calculations tests...
+[  script:bcc-farming] [13:02:18][ERROR][CALCULATIONS] Growth stage calculation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:219: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][CALCULATIONS] Reward calculation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:234: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][CALCULATIONS] Watering validation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:269: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][INFO][EXPORTS] Starting export functions tests...
+[  script:bcc-farming] [13:02:18][ERROR][EXPORTS] Basic export validation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:304: attempt to index a nil value (field 'bcc-farming')
+[  script:bcc-farming] [13:02:18][FAIL][EXPORTS] FarmingOverview includes systemStats
+[  script:bcc-farming] [13:02:18][ERROR][EXPORTS] Export structure validation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:337: attempt to index a nil value (field 'systemStats')
+[  script:bcc-farming] [13:02:18][INFO][NUI] Starting NUI system tests...
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUIConfig exists
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUIConfig.PlantStatus exists
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUI enabled setting exists
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUIConfig.Visual exists
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUIConfig.Language exists
+[  script:bcc-farming] [13:02:18][INFO][NUI] NUI files validation would require file system access
+[  script:bcc-farming] [13:02:18][PASS][NUI] NUI files check placeholder
+[  script:bcc-farming] [13:02:18][INFO][INTEGRATION] Starting system integration tests...
+[  script:bcc-farming] [13:02:18][INFO][INTEGRATION] Client-server communication test requires live environment
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Client-server communication placeholder
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] No plants with invalid data in database
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Maçã has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Banana has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Cereja has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Milho has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Tabaco has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Erva Especial has stage1 prop
+[  script:bcc-farming] [13:02:18][PASS][INTEGRATION] Flores has stage1 prop
+[  script:bcc-farming] [13:02:18][INFO][PERFORMANCE] Starting performance tests...
+[  script:bcc-farming] [13:02:18][PASS][PERFORMANCE] GetFarmingOverview completed in 1ms (< 1000ms)
+[  script:bcc-farming] [13:02:18][ERROR][PERFORMANCE] Calculation performance test failed: @bcc-farming/testing/test_suite_v2.5.0.lua:441: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][INFO][RESULTS] ========================================
+[  script:bcc-farming] [13:02:18][INFO][RESULTS] BCC-Farming v2.5.0 Test Results
+[  script:bcc-farming] [13:02:18][INFO][RESULTS] ========================================
+[  script:bcc-farming] [13:02:18][RESULT][RESULTS] Total Tests: 81
+[  script:bcc-farming] [13:02:18][RESULT][RESULTS] Passed: 80
+[  script:bcc-farming] [13:02:18][RESULT][RESULTS] Failed: 1
+[  script:bcc-farming] [13:02:18][RESULT][RESULTS] Success Rate: 98.8%
+[  script:bcc-farming] [13:02:18][RESULT][RESULTS] Test Duration: 23ms
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS] Failed Tests:
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [CALCULATIONS] Growth stage calculation: @bcc-farming/testing/test_suite_v2.5.0.lua:219: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [CALCULATIONS] Reward calculation: @bcc-farming/testing/test_suite_v2.5.0.lua:234: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [CALCULATIONS] Watering validation: @bcc-farming/testing/test_suite_v2.5.0.lua:269: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [EXPORTS] Basic export validation: @bcc-farming/testing/test_suite_v2.5.0.lua:304: attempt to index a nil value (field 'bcc-farming')
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [EXPORTS] Export structure validation: @bcc-farming/testing/test_suite_v2.5.0.lua:337: attempt to index a nil value (field 'systemStats')
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [PERFORMANCE] Calculation performance test: @bcc-farming/testing/test_suite_v2.5.0.lua:441: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] [13:02:18][ERROR][RESULTS]   [EXPORTS] FarmingOverview includes systemStats
+[  script:bcc-farming] [13:02:18][INFO][RESULTS] ========================================
+║               MssRP║ farming-perf-all
+[  script:bcc-farming] [13:02:28][PERF][INFO][SYSTEM] ========================================
+[  script:bcc-farming] [13:02:28][PERF][INFO][SYSTEM] BCC-Farming v2.5.0 Performance Tests
+[  script:bcc-farming] [13:02:28][PERF][INFO][SYSTEM] ========================================
+[  script:bcc-farming] [13:02:28][PERF][INFO][EXPORTS] Starting export function performance tests...
+[  script:bcc-farming] [13:02:28][PERF][INFO][EXPORTS] Benchmarking: GetGlobalPlantCount (10 iterations)
+[  script:bcc-farming] SCRIPT ERROR: @bcc-farming/testing/performance_tests.lua:102: bad argument #2 to 'format' (number has no integer representation)
+[  script:bcc-farming] > BenchmarkFunction (@bcc-farming/testing/performance_tests.lua:102)
+[  script:bcc-farming] > TestExportPerformance (@bcc-farming/testing/performance_tests.lua:162)
+[  script:bcc-farming] > RunAllTests (@bcc-farming/testing/performance_tests.lua:474)
+[  script:bcc-farming] > ref (@bcc-farming/testing/performance_tests.lua:547)
+[  script:bcc-farming] > rawQuery (@oxmysql/dist/build.js:26045)
+[  script:bcc-farming] > runMicrotasks (<anonymous>:0)
+║               MssRP║ farming-validate-schema
+[  script:bcc-farming] [13:02:37][MIGRATION][INFO] Validating database schema migration...
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'growth_stage' exists with correct type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'growth_stage' has correct data type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'growth_progress' exists with correct type
+[  script:bcc-farming] [13:02:37][MIGRATION][WARN] Column 'growth_progress' type mismatch: expected decimal(5,2), got float(5,2)
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'water_count' exists with correct type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'water_count' has correct data type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'max_water_times' exists with correct type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'max_water_times' has correct data type
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Column 'base_fertilized' exists with correct type
+[  script:bcc-farming] [13:02:37][MIGRATION][WARN] Column 'base_fertilized' type mismatch: expected tinyint(1), got tinyint(1)
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Legacy column 'plant_watered' preserved for compatibility
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Helper table 'bcc_farming_growth_stages' created successfully
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Helper table 'bcc_farming_watering_log' created successfully
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Helper table 'bcc_farming_fertilizer_log' created successfully
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Index 'idx_plant_owner' exists
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Index 'idx_growth_stage' exists
+[  script:bcc-farming] [13:02:37][MIGRATION][PASS] Index 'idx_growth_progress' exists
+[  script:bcc-farming] [13:02:37][MIGRATION][WARN] Index 'idx_water_status' not found - may affect performance
+[  script:bcc-farming] [13:02:37][MIGRATION][INFO] Schema validation: 44 passed, 0 failed, 12 warnings
+║               MssRP║ farming-test-exports
+[  script:bcc-farming] [13:03:06][INFO][EXPORTS] Starting export functions tests...
+[  script:bcc-farming] [13:03:06][ERROR][EXPORTS] Basic export validation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:304: attempt to index a nil value (field 'bcc-farming')
+[  script:bcc-farming] [13:03:06][FAIL][EXPORTS] FarmingOverview includes systemStats
+[  script:bcc-farming] [13:03:06][ERROR][EXPORTS] Export structure validation failed: @bcc-farming/testing/test_suite_v2.5.0.lua:337: attempt to index a nil value (field 'systemStats')
+[  script:bcc-farming] [13:03:06][INFO][RESULTS] Export tests completed: 80 passed, 2 failed
+║               MssRP║ farming-perf-exports
+[  script:bcc-farming] [13:03:16][PERF][INFO][EXPORTS] Starting export function performance tests...
+[  script:bcc-farming] [13:03:16][PERF][INFO][EXPORTS] Benchmarking: GetGlobalPlantCount (10 iterations)
+[  script:bcc-farming] SCRIPT ERROR: @bcc-farming/testing/performance_tests.lua:102: bad argument #2 to 'format' (number has no integer representation)
+[  script:bcc-farming] > BenchmarkFunction (@bcc-farming/testing/performance_tests.lua:102)
+[  script:bcc-farming] > TestExportPerformance (@bcc-farming/testing/performance_tests.lua:162)
+[  script:bcc-farming] > ref (@bcc-farming/testing/performance_tests.lua:551)
+[  script:bcc-farming] > rawQuery (@oxmysql/dist/build.js:26045)
+[  script:bcc-farming] > runMicrotasks (<anonymous>:0)
+[  script:bcc-farming] > processTicksAndRejections (node:internal/process/task_queues:96)
+║               MssRP║ farming-perf-calc
+[  script:bcc-farming] [13:03:21][PERF][INFO][CALC] Starting calculation performance tests...
+[  script:bcc-farming] SCRIPT ERROR: @bcc-farming/testing/performance_tests.lua:176: module 'server.services.growth_calculations' not found
+[  script:bcc-farming] > TestCalculationPerformance (@bcc-farming/testing/performance_tests.lua:176)
+[  script:bcc-farming] > ref (@bcc-farming/testing/performance_tests.lua:556)
+║               MssRP║ farming-perf-db
+[  script:bcc-farming] [13:03:27][PERF][INFO][DATABASE] Starting database performance tests...
+[  script:bcc-farming] [13:03:27][PERF][INFO][DATABASE] Benchmarking: Basic Count Query (50 iterations)
+[  script:bcc-farming] SCRIPT ERROR: @bcc-farming/testing/performance_tests.lua:102: bad argument #2 to 'format' (number has no integer representation)
+[  script:bcc-farming] > BenchmarkFunction (@bcc-farming/testing/performance_tests.lua:102)
+[  script:bcc-farming] > TestDatabasePerformance (@bcc-farming/testing/performance_tests.lua:244)
+[  script:bcc-farming] > ref (@bcc-farming/testing/performance_tests.lua:561)
+[  script:bcc-farming] > rawQuery (@oxmysql/dist/build.js:26045)
+[  script:bcc-farming] > runMicrotasks (<anonymous>:0)
+[  script:bcc-farming] > processTicksAndRejections (node:internal/process/task_queues:96)

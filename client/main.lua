@@ -49,7 +49,7 @@ RegisterNetEvent('bcc-farming:ShowSmellingPlants', function(smellingPlants)
     for _, plant in pairs(smellingPlants) do
         print('Showing smelling plant:', plant.plantName, 'at coords:', plant.coords.x, plant.coords.y, plant.coords.z)
         -- TriggerEvent("rsd_notify:NotifLeftAdvanced", "Spürnase", _U('SmellPlant'), "toast_awards_set_d", "awards_set_d_001", 5000)
-        VORPcore.NotifyRightTip(_U('SmellPlant'), 5000)
+        SendClientFarmingNotification(_U('SmellPlant'))
         if Config.SmellingPlantBlips then
             local blip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, plant.coords.x, plant.coords.y, plant.coords.z)
             SetBlipSprite(blip, joaat('BLIP_AMBIENT_SMELL'), true)

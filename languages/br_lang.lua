@@ -26,7 +26,22 @@ Locales["br_lang"] = {
     UsageLeft = "Durabilidade: ",
     FinishPlantingProcessFirst = "Termine de cultivar a planta atual primeiro",
     needNewTool = "Ferramenta quebrada, você precisa de uma nova!",
-    useBucket = "Regar",
+    useBucket = "Usar Balde",
+    plantFullyWatered = "A planta já está totalmente regada!",
+    plantWatered = "Planta regada!",
+    wateringCooldown = "Deve aguardar antes da próxima rega!",
     --- Cheirando 
     SmellPlant = "Há o cheiro de uma planta suspeita no ar",
+    --- Fertilizantes
+    noPlantNearby = "Nenhuma planta próxima",
+    invalidPlantConfig = "Configuração de planta inválida",
+    plantNoBaseFertilizer = "Esta planta não requer fertilizante básico",
+    baseFertilizerAlready = "Fertilizante básico já foi aplicado nesta planta",
+    enhancedFertilizerAlready = "Fertilizante aprimorado já foi aplicado nesta planta",
+    noFertilizer = "Você não tem este fertilizante",
+    unableToInspect = "Não foi possível inspecionar a planta",
+    soilPrepared = "Solo preparado! Adicionado 3 solo ao inventário",
+    plantNotFound = "Planta não encontrada",
+    baseFertilizerApplied = "Fertilizante básico aplicado com sucesso!",
+    enhancedFertilizerApplied = "Fertilizante aprimorado aplicado! Tempo de crescimento reduzido em %d%%",
 }

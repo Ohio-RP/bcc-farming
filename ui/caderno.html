@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Plantas</title>
+    <style>
+        @font-face {
+            font-family: 'manuscrit';
+            src: url('fonts/manuscrit.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'UglyTypist';
+            src: url('fonts/UglyTypist.ttf') format('truetype');
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .notebook {
+            background-image: url('paper.png');
+            background-size: cover;
+            background-position: center;
+            width: 380px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 5em;
+            text-align: center;
+            margin: 0;
+            font-family: 'manuscrit', sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 3.5em;
+            text-align: center;
+            margin: 5px 0 20px 0;
+            font-family: 'UglyTypist', sans-serif;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .task-text {
+            font-family: 'UglyTypist', sans-serif;
+            font-weight: normal;
+            font-size: 2em;
+            flex: 1;
+        }
+        .checkboxes {
+            display: flex;
+            flex-shrink: 0;
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px dashed black;
+            margin: 0 5px;
+            display: inline-block;
+            position: relative;
+        }
+        .checked::after {
+            content: '✔';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            color: black;
+        }
+        .notes-section {
+            margin-top: 20px;
+        }
+        .notes-section h3 {
+            font-family: 'UglyTypist', sans-serif;
+            font-weight: bold;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .notes-space {
+            width: 100%;
+            height: 100px;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <div class="notebook">
+        <h1>PLANTAS</h1>
+        <h2>Milho 10</h2><!-- Nome da Planta  e Quantidade-->
+        <ul>
+            <li>
+                <span class="task-text">Crescimento</span> <!-- A cada estagio completado, marca um checkbox-->
+                <div class="checkboxes">
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox"></span>
+                </div>
+            </li>
+            <li>
+                <span class="task-text">Tempo</span> <!-- A cada 20% do tempo passado marca um checkbox ao invez de mostrar o tempo em numeros-->
+                <div class="checkboxes">
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                </div>
+            </li>
+            <li>
+                <span class="task-text">Fertilizado</span> <!-- Mostra se foi fertilizado ou não -->
+                <div class="checkboxes">
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                </div>
+            </li>
+            <li>
+                <span class="task-text">Irrigado</span> <!-- A cada irrigação marca um checkbox -->
+                <div class="checkboxes">
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox checked"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                    <span class="checkbox"></span>
+                </div>
+            </li>
+        </ul>
+        <div class="notes-section">
+            <h3>Notas:</h3>
+            <div class="notes-space"></div> <!-- Aqui mostra as informções, como não irrigado, nao fertilizado, tipo de fertilizante [label] --> 
+        </div>
+    </div>
+</body>
+</html>

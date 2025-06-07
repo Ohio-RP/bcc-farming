@@ -30,7 +30,7 @@ local function SendNotification(src, notifyData)
     elseif notificationSystem == 'vorp_core' then
         -- Fallback para VORP Core
         if notifyData.type == 'tip' then
-            VORPcore.NotifyRightTip(src, notifyData.description, notifyData.duration or 5000)
+            SendFarmingNotification(src, notifyData.description)
         else
             VORPcore.NotifyLeft(src, notifyData.title or "BCC Farming", notifyData.description, 
                 "generic_textures", notifyData.icon or "tick", notifyData.duration or 5000, "COLOR_WHITE")
@@ -88,14 +88,14 @@ exports('NotifyReadyPlants', function(playerId, timeThreshold)
         end
     end
     
-    local description = string.format("Você tem %d plantas prontas em breve:\\n%s", 
-        totalReady, table.concat(plantNames, "\\n"))
+    local description = string.format("Você tem %d plantas prontas em breve:, %s", 
+        totalReady, table.concat(plantNames, ", "))
     
     SendNotification(playerId, {
         title = "🌱 Plantas Prontas",
         description = description,
-        icon = "plant",
-        template = "INFO",
+        icon = "farming",
+        template = "FARMING",
         duration = 8000
     })
     
@@ -144,14 +144,14 @@ exports('NotifyPlantsNeedWater', function(playerId)
         end
     end
     
-    local description = string.format("Você tem %d plantas que precisam de água:\\n%s", 
-        totalThirsty, table.concat(plantNames, "\\n"))
+    local description = string.format("Você tem %d plantas que precisam de água: %s", 
+        totalThirsty, table.concat(plantNames, ", "))
     
     SendNotification(playerId, {
         title = "💧 Plantas Precisam de Água",
         description = description,
-        icon = "water_bucket",
-        template = "ERROR",
+        icon = "farming",
+        template = "FARMING",
         duration = 6000
     })
     
@@ -217,28 +217,28 @@ exports('NotifyFarmingEvent', function(playerId, eventType, eventData)
         title = "🌾 Planta Cresceu"
         description = string.format("Sua %s está pronta para colheita!", eventData.plantName or "planta")
         template = "SUCCESS"
-        icon = "plant"
+        icon = "farming"
         duration = 7000
         
     elseif eventType == 'plant_planted' then
         title = "🌱 Planta Plantada"
         description = string.format("Você plantou %s com sucesso!", eventData.plantName or "uma planta")
         template = "SUCCESS"
-        icon = "tick"
+        icon = "farming"
         duration = 4000
         
     elseif eventType == 'plant_harvested' then
         title = "🌾 Planta Colhida"
         description = string.format("Você colheu %s!", eventData.plantName or "uma planta")
         template = "REWARD_MONEY"
-        icon = "satchel"
+        icon = "farming"
         duration = 4000
         
     elseif eventType == 'plant_watered' then
         title = "💧 Planta Regada"
         description = string.format("Você regou sua %s.", eventData.plantName or "planta")
         template = "TIP"
-        icon = "water_bucket"
+        icon = "farming"
         duration = 3000
         
     elseif eventType == 'fertilizer_used' then
@@ -246,7 +246,7 @@ exports('NotifyFarmingEvent', function(playerId, eventType, eventData)
         description = string.format("Fertilizante aplicado! Tempo de crescimento reduzido em %d%%.", 
             math.floor((eventData.reduction or 0) * 100))
         template = "INFO"
-        icon = "info"
+        icon = "farming"
         duration = 5000
         
     elseif eventType == 'error' then
@@ -260,7 +260,7 @@ exports('NotifyFarmingEvent', function(playerId, eventType, eventData)
         title = "📢 BCC Farming"
         description = eventData.message or "Evento de farming"
         template = "INFO"
-        icon = "generic_list"
+        icon = "farming"
         duration = 4000
     end
     
@@ -288,12 +288,12 @@ exports('SendDailyFarmingReport', function(playerId)
     local comparison = playerComparison.data
     
     local description = string.format(
-        "📊 RELATÓRIO DIÁRIO DE FARMING\\n\\n" ..
-        "🌱 Total de Plantas: %d\\n" ..
-        "🌾 Prontas para Colheita: %d\\n" ..
-        "💧 Precisam de Água: %d\\n" ..
-        "📈 Eficiência: %d%%\\n\\n" ..
-        "🏆 Ranking: %s\\n" ..
+        "📊 RELATÓRIO DIÁRIO DE FARMING, , " ..
+        "🌱 Total de Plantas: %d, " ..
+        "🌾 Prontas para Colheita: %d, " ..
+        "💧 Precisam de Água: %d, " ..
+        "📈 Eficiência: %d%%, , " ..
+        "🏆 Ranking: %s, " ..
         "📍 Você tem %d%% das plantas globais",
         stats.farming.totalPlants,
         stats.farming.readyToHarvest,
@@ -307,8 +307,8 @@ exports('SendDailyFarmingReport', function(playerId)
     SendNotification(playerId, {
         title = "📊 Relatório Diário",
         description = description,
-        template = "INFO",
-        icon = "info",
+        template = "FARMING",
+        icon = "farming",
         duration = 12000
     })
     
@@ -325,10 +325,10 @@ exports('NotifyPlantSmelled', function(playerId, plantData)
         plantData.count and plantData.count > 1 and "plantas" or "uma planta")
     
     SendNotification(playerId, {
-        title = "👃 Planta Detectada",
+        title = "👃 Cheiro Estranho no Ar",
         description = description,
-        template = "ERROR",
-        icon = "warning",
+        template = "FARMING",
+        icon = "badges",
         duration = 6000
     })
     
@@ -352,7 +352,7 @@ RegisterCommand('farmnotify', function(source, args)
     elseif testType == 'event' then
         exports['bcc-farming']:NotifyFarmingEvent(source, 'plant_grown', { plantName = "Milho Teste" })
     else
-        VORPcore.NotifyRightTip(source, "Use: /farmnotify [ready|water|limits|report|event]", 5000)
+        SendFarmingNotification(source, "Use: /farmnotify [ready|water|limits|report|event]")
     end
 end)
 

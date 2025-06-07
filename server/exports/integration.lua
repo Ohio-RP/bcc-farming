@@ -153,13 +153,13 @@ exports('ExecuteAdminAction', function(playerId, action, params)
         })
         
         if result.success then
-            VORPcore.NotifyRightTip(source, result.message, 5000)
+            SendFarmingNotification(source, result.message)
         else
-            VORPcore.NotifyRightTip(source, "Erro: " .. result.error, 5000)
+            SendFarmingNotification(source, "Erro: " .. result.error)
         end
         
     else
-        VORPcore.NotifyRightTip(source, "Ação inválida. Use: dashboard, cleanup, prices, cache, seeds", 5000)
+        SendFarmingNotification(source, "Ação inválida. Use: dashboard, cleanup, prices, cache, seeds")
     end
 end)
 
@@ -170,7 +170,7 @@ RegisterCommand('myfarming', function(source, args)
     local playerStats = exports['bcc-farming']:GetPlayerFarmingStats(source)
     
     if not playerStats.success then
-        VORPcore.NotifyRightTip(source, "Erro ao obter suas estatísticas.", 5000)
+        SendFarmingNotification(source, "Erro ao obter suas estatísticas.")
         return
     end
     

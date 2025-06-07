@@ -22,16 +22,44 @@ Config = {
     -- Script will use the one with the highest time reduction from the player's inventory
     fertilizerSetup = {
         {
-            fertName = 'fertilizer1', -- Item name used in the database
-            fertTimeReduction = 0.25, -- Default: 0.25 / 25% reduction in time
+            fertName = 'fertilizer', -- Fertilizante Básico
+            fertTimeReduction = 0.10, -- 10% de redução no tempo
         },
         {
-            fertName = 'fertilizer2', -- Item name used in the database
-            fertTimeReduction = 0.50, -- Default: 0.50 / 50% reduction in time
+            fertName = 'fertilizersw', -- Fertilizante com Madeira Macia
+            fertTimeReduction = 0.20, -- 20% de redução no tempo
         },
         {
-            fertName = 'fertilizer3', -- Item name used in the database
-            fertTimeReduction = 0.75, -- Default: 0.75 / 75% reduction in time
+            fertName = 'fertilizerpro', -- Fertilizante com Produtos
+            fertTimeReduction = 0.30, -- 30% de redução no tempo
+        },
+        {
+            fertName = 'fertilizeregg', -- Fertilizante com Ovos
+            fertTimeReduction = 0.40, -- 40% de redução no tempo
+        },
+        {
+            fertName = 'fertilizersq', -- Fertilizante com Esquilo
+            fertTimeReduction = 0.50, -- 50% de redução no tempo
+        },
+        {
+            fertName = 'fertilizerpulpsap', -- Fertilizante com Polpa/Seiva
+            fertTimeReduction = 0.60, -- 60% de redução no tempo
+        },
+        {
+            fertName = 'fertilizerbless', -- Fertilizante Abençoado
+            fertTimeReduction = 0.70, -- 70% de redução no tempo
+        },
+        {
+            fertName = 'fertilizersn', -- Fertilizante com Cobra
+            fertTimeReduction = 0.80, -- 80% de redução no tempo
+        },
+        {
+            fertName = 'fertilizersyn', -- Fertilizante Pecaminoso
+            fertTimeReduction = 0.85, -- 85% de redução no tempo
+        },
+        {
+            fertName = 'fertilizerwoj', -- Fertilizante com Wojape
+            fertTimeReduction = 0.90, -- 90% de redução no tempo
         },
     },
     -----------------------------------------------------

@@ -40,6 +40,19 @@ exports('GetGlobalPlantsByType', function()
         }
     end
     
+    -- Adicionar nome da planta aos resultados
+    if result then
+        for _, plantData in pairs(result) do
+            -- Encontrar configuração da planta
+            for _, plantConfig in pairs(Plants) do
+                if plantConfig.seedName == plantData.plant_type then
+                    plantData.plant_name = plantConfig.plantName
+                    break
+                end
+            end
+        end
+    end
+    
     return { 
         success = true, 
         data = result or {}, 
@@ -154,7 +167,7 @@ exports('GetWateringStatus', function()
     local success, result = pcall(function()
         return MySQL.query.await([[
             SELECT 
-                plant_watered,
+                plant_watered, 
                 COUNT(*) as count,
                 AVG(CAST(time_left AS UNSIGNED)) as avg_time_left
             FROM `bcc_farming` 

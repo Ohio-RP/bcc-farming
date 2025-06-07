@@ -27,6 +27,21 @@ Locales["en_lang"] = {
     FinishPlantingProcessFirst = "Finish growing the current plant first",
     needNewTool = "Tool broken, you need a new one!",
     useBucket = "Use Bucket",
+    plantFullyWatered = "Plant is already fully watered!",
+    plantWatered = "Plant watered!",
+    wateringCooldown = "Must wait before next watering!",
     --- Smelling 
     SmellPlant = "There is the scent of a suspicious plant in the air",
+    --- Fertilizers
+    noPlantNearby = "No plant nearby",
+    invalidPlantConfig = "Invalid plant configuration",
+    plantNoBaseFertilizer = "This plant doesn't require base fertilizer",
+    baseFertilizerAlready = "Base fertilizer already applied to this plant",
+    enhancedFertilizerAlready = "Enhanced fertilizer already applied to this plant",
+    noFertilizer = "You don't have this fertilizer",
+    unableToInspect = "Unable to inspect plant",
+    soilPrepared = "Soil prepared! Added 3 soil to inventory",
+    plantNotFound = "Plant not found",
+    baseFertilizerApplied = "Base fertilizer applied successfully!",
+    enhancedFertilizerApplied = "Enhanced fertilizer applied! Growth time reduced by %d%%",
 }
